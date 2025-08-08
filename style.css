@@ -1,0 +1,82 @@
+body {
+  background-color: #12141c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  color: #e0e0e0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.wadah {
+  background-color: #1c1f2b;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+.wadah-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.wadah-header button {
+  background-color: #2d3142;
+  color: #b5ffe9;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+.wadah-header button:hover {
+  background-color: #3b4059;
+}
+#bulanTahun {
+  font-size: 1.3rem;
+  color: #b5ffe9;
+}
+.hari-mingguan {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.hari-mingguan div {
+  background-color: #2d3142;
+  color: #b5ffe9;
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+
+.tanggal-1 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.tanggal-1 div {
+  padding: 0.6rem 0;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: background-color 0.3s color 0.3s;
+  color: #d1d1e9;
+}
+.tanggal-1 div:hover {
+  background-color: #3b4059;
+}
+.hari-ini {
+  background-color: #b5ffe9;
+  color: #1c1f2b;
+  font-weight: bold;
+}
+.tanggal-lain {
+  color: #6e6e6e;
+}
