@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "esbuild": "^0.25.9",
     "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "kaplay": "^3001.0.19"
   }
 }
