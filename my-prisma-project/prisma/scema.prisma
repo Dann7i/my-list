@@ -1,4 +1,14 @@
 datasource db {
-provider = "sqlite"
+<F11>provider = "sqlite"
 url = "file:./dev/db"
+}
+
+generator client {
+povider: "prisma-client.js"
+}
+
+model user {
+id Int @id @default(autoincrement())
+name String
+email String @unique
 }
