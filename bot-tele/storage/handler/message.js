@@ -18,6 +18,9 @@ export function handleMessage(pesan, chatId, danbot) {
   } else {
     console.log("DEBUG: pesan.text tidak ada atau bukan string");
   }
+  danbot.onText(pembuatBot, (pesan) => {
+    danbot.sendMessage(pesan.from.id, "namanya Wildan");
+  });
 }
 
 export default handleMessage;
