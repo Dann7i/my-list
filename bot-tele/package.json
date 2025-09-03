@@ -1,12 +1,16 @@
 {
   "name": "bot-tele",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "./storage/index.js",
   "scripts": {
     "start": "node ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Wildan Hermawan",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0"
+  }
 }
