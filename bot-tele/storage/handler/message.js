@@ -1,5 +1,5 @@
 let started = /Halo/;
-let wildan = /Wildan/;
+let pembuatBot = /Wildan/;
 let siapakamu = /Siapa kamu/;
 let apaKabar = /Apa kabar/;
 let botName = /Nama kamu siapa/;
