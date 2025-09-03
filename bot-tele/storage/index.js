@@ -4,7 +4,6 @@ const token = "8099406581:AAH2fEMnidQcfulmXiHbclaOsNf-HdCkI0k";
 let started = /Halo/;
 let chatId;
 const danbot = new TelegramBot(token, { polling: true });
-
 danbot.on("message", (pesan) => {
   pesan.chat.id;
   console.log("Pesan diterima:", pesan.text);
