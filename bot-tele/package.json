@@ -2,9 +2,9 @@
   "name": "bot-tele",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./storage/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
