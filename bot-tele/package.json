@@ -5,7 +5,7 @@
   "description": "",
   "main": "./storage/index.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon ./storage/index.js"
   },
   "keywords": [],
   "author": "Wildan Hermawan",

@@ -1,0 +1,4 @@
+{
+  "watch": ["storage"],
+  "ext": "js,json"
+}
