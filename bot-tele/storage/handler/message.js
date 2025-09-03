@@ -1,4 +1,9 @@
 let started = /Halo/;
+let wildan = /Wildan/;
+let siapakamu = /Siapa kamu/;
+let apaKabar = /Apa kabar/;
+let botName = /Nama kamu siapa/;
+let namabot = "Danbot";
 let startedCommand = "/start";
 export function handleMessage(pesan, chatId, danbot) {
   console.log("Pesan diterima:", pesan.text);
