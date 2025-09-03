@@ -1,8 +1,8 @@
 let started = /Halo/;
-let pembuatBot = /Wildan/;
-let siapakamu = /Siapa kamu/;
-let apaKabar = /Apa kabar/;
-let botName = /Nama kamu siapa/;
+let pembuatBot = /^Siapa pembuat bot ini. WILDAN$/;
+//let siapakamu = /^Siapa kamu$/;
+//let apaKabar = /^Apa kabar$/;
+//let botName = /^Nama kamu siapa$/;
 let namabot = "Danbot";
 let startedCommand = "/start";
 export function handleMessage(pesan, chatId, danbot) {
