@@ -11,3 +11,5 @@ danbot.on("message", (pesan) => {
   console.log("Pesan diterima:", pesan.text);
   handleMessage(pesan, chatId, danbot);
 });
+
+console.log(TelegramBot);

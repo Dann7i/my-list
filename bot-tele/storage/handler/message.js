@@ -1,14 +1,17 @@
 let started = /Halo/;
+let startedCommand = "/start";
 export function handleMessage(pesan, chatId, danbot) {
   console.log("Pesan diterima:", pesan.text);
-  if (/^\/start$/i.test(pesan.text)) {
-    danbot.sendMessage(chatId, "Selamat datang di bot Wildannn!");
-    return;
-  }
-
-  //jika pesan halo kirim aja balasan!
-  if (/Halo/i.test(pesan.text)) {
-    danbot.sendMessage(chatId, "Halo! Ada yang bisa saya bantu?");
+  if (typeof pesan.text === "string") {
+    if (/^\/start$/i.test(pesan.text)) {
+      console.log("DEBUG: /start terdeteksi");
+      danbot.sendMessage(chatId, `Selamat datang dibot saya. Ketik  ${startedCommand} untuk mulai`);
+    }
+    if (/Halo/i.test(pesan.text)) {
+      danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`);
+    }
+  } else {
+    console.log("DEBUG: pesan.text tidak ada atau bukan string");
   }
 }
 
