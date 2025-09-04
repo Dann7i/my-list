@@ -9,7 +9,6 @@ const danbot = new TelegramBot(token, { polling: true });
 
 danbot.on("message", (pesan) => {
   const chatId = pesan.chat.id;
-  console.log("Pesan diterima:", pesan.text);
   handleMessage(pesan, chatId, danbot);
 });
 
