@@ -6,6 +6,7 @@ let pembuatBot = /^Siapa pembuat bot ini. WILDAN$/;
 //let botName = /^Nama kamu siapa$/;
 let namabot = "Danbot";
 let startedCommand = "/start";
+//starting
 export function handleMessage(pesan, chatId, danbot) {
   console.log("Pesan diterima:", pesan.text);
   if (typeof pesan.text === "string") {
@@ -18,10 +19,13 @@ export function handleMessage(pesan, chatId, danbot) {
     }
     if (/Halo/i.test(pesan.text)) {
       danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`);
-    }
-  } else {
+    } if(/^\/musik/i.test(pesan.text)) {
+const part = pesan.text.split(" ");
+} else {
     console.log("DEBUG: pesan.text tidak ada atau bukan string");
   }
+
+
   danbot.onText(pembuatBot, (pesan) => {
     danbot.sendMessage(pesan.from.id, "namanya Wildan");
   });
