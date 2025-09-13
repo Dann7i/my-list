@@ -21,6 +21,8 @@ export function handleMessage(pesan, chatId, danbot) {
       danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`);
     } if(/^\/musik/i.test(pesan.text)) {
 const part = pesan.text.split(" ");
+			const songName = part[1] || null;
+	sendMusic(chatId, danbot, songName)
 } else {
     console.log("DEBUG: pesan.text tidak ada atau bukan string");
   }
