@@ -15,14 +15,15 @@ export function handleMessage(pesan, chatId, danbot) {
       danbot.sendMessage(
         chatId,
         `Selamat datang dibot saya. Ketik  ${startedCommand} untuk mulai`,
-      );
+      ); return;
     }
     if (/Halo/i.test(pesan.text)) {
-      danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`);
+      danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`) return;
     } if(/^\/musik/i.test(pesan.text)) {
 const part = pesan.text.split(" ");
 			const songName = part[1] || null;
-	sendMusic(chatId, danbot, songName)
+	sendMusic(chatId, danbot, songName);
+return;
 } else {
     console.log("DEBUG: pesan.text tidak ada atau bukan string");
   }
@@ -30,6 +31,7 @@ const part = pesan.text.split(" ");
 
   danbot.onText(pembuatBot, (pesan) => {
     danbot.sendMessage(pesan.from.id, "namanya Wildan");
+return;
   });
 }
 
