@@ -1,4 +1,4 @@
-import { sendMusic } from "../fitur/musicSender";
+import { sendMusic } from "../fitur/musicSender.js";
 let started = /Halo/;
 let pembuatBot = /^Siapa pembuat bot ini. WILDAN$/;
 //let siapakamu = /^Siapa kamu$/;
@@ -18,7 +18,8 @@ export function handleMessage(pesan, chatId, danbot) {
       ); return;
     }
     if (/Halo/i.test(pesan.text)) {
-      danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`) return;
+      danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`);
+			return;
     } if(/^\/musik/i.test(pesan.text)) {
 const part = pesan.text.split(" ");
 			const songName = part[1] || null;
@@ -29,7 +30,7 @@ return;
   }
 
 
-  danbot.onText(pembuatBot, (pesan) => {
+  if (pembuatBot, (pesan) => {
     danbot.sendMessage(pesan.from.id, "namanya Wildan");
 return;
   });
