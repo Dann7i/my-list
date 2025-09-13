@@ -30,10 +30,9 @@ return;
   }
 
 
-  if (pembuatBot, (pesan) => {
-    danbot.sendMessage(pesan.from.id, "namanya Wildan");
-return;
-  });
+if (pembuatBot.test(pesan.text)) {
+    danbot.sendMessage(chatId, "Namanya Wildan");
+    return;
 }
-
+	}
 export default handleMessage;
