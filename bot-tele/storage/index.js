@@ -1,5 +1,4 @@
 import { handleMessage } from "./handler/message.js";
-import ai from "./fitur/ai/gemini.js";
 import TelegramBot from "node-telegram-bot-api";
 console.log("Bot started...");
 const token = "8099406581:AAH2fEMnidQcfulmXiHbclaOsNf-HdCkI0k";
