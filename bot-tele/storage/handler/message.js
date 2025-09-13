@@ -1,3 +1,4 @@
+import { sendMusic } from "../fitur/musicSender";
 let started = /Halo/;
 let pembuatBot = /^Siapa pembuat bot ini. WILDAN$/;
 //let siapakamu = /^Siapa kamu$/;
@@ -10,7 +11,10 @@ export function handleMessage(pesan, chatId, danbot) {
   if (typeof pesan.text === "string") {
     if (/^\/start$/i.test(pesan.text)) {
       console.log("DEBUG: /start terdeteksi");
-      danbot.sendMessage(chatId, `Selamat datang dibot saya. Ketik  ${startedCommand} untuk mulai`);
+      danbot.sendMessage(
+        chatId,
+        `Selamat datang dibot saya. Ketik  ${startedCommand} untuk mulai`,
+      );
     }
     if (/Halo/i.test(pesan.text)) {
       danbot.sendMessage(chatId, `Halo! Ada yang bisa saya bantu?`);
